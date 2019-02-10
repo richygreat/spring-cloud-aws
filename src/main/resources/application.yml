@@ -1,0 +1,18 @@
+application:
+  name: ^project.artifactId^
+  description: ^project.name^
+  version: ^project.version^
+server:
+  port: 80
+spring:
+  main:
+    banner-mode: "off"
+logging:
+  level:
+    ROOT: INFO
+---
+spring:
+  profiles: dev
+logging:
+  level:
+    com.github.richygreat: DEBUG
